@@ -1,12 +1,7 @@
 /*                           creating 2 custom font-family properties font-family-base and font-family-title with the same list of fonts while Targeting the root     */
 :root {
-<<<<<<< HEAD
 	--font-family-base: 'Helvetica Neue','Helvetica','Arial','sans-serif';
 	--font-family-title:  'Helvetica Neue','Helvetica','Arial','sans-serif';
-=======
-	--font-family-base: 'Helvetica Neue',Helvetica,Arial,sans-serif;
-	--font-family-title:  'Helvetica Neue',Helvetica,Arial,sans-serif;
->>>>>>> 9a13c3334668b3aefd80aba840dbd01c752d25ee
 }
 
 /*      setting the body's font-family to font-family-base     */
