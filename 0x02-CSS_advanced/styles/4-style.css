@@ -1,5 +1,5 @@
 /*                           creating 2 custom font-family properties font-family-base and font-family-title with the same list of fonts while Targeting the root     */
-:root: {
+:root {
 	--font-family-base: 'Helvetica Neue','Helvetica','Arial','sans-serif';
 	--font-family-title:  'Helvetica Neue','Helvetica','Arial','sans-serif';
 }
