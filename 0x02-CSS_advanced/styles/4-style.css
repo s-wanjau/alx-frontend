@@ -1,7 +1,14 @@
 /*                           creating 2 custom font-family properties font-family-base and font-family-title with the same list of fonts while Targeting the root     */
-:root {
-	--font-family-base: 'Helvetica Neue',Helvetica,Arial,sans-serif;
-	--font-family-title:  'Helvetica Neue',Helvetica,Arial,sans-serif;
+:root{
+	--color-primary: #d73953;
+	--color-black: #090909;
+	--color-white: #ffffff;
+	--color-light-grey: #f3f3f3;
+	--color-dark-grey: #353535;
+	--text-color: var(--color-black);
+ 
+	--font-family-base: 'Helvetica Neue','Helvetica','Arial','sans-serif';
+	--font-family-title:  'Helvetica Neue','Helvetica','Arial','sans-serif';
 }
 
 /*      setting the body's font-family to font-family-base     */
