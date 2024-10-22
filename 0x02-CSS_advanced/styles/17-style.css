@@ -1,0 +1,118 @@
+/*           Targeting root, create the following custom properties            */
+:root {
+	--color-primary: #d73953;
+	--color-black: #090909;
+	--color-white: #ffffff;
+	--color-light-grey: #f3f3f3;
+	--color-dark-grey: #353535;
+	--text-color: var(--color-black);
+ 
+	--font-family-base:'Open Sans', 'Helvetica Neue','Helvetica','Arial','sans-serif';
+	--font-family-title: 'Raleway', 'Helvetica Neue','Helvetica','Arial','sans-serif';
+	--font-size-small: 1.2rem;
+	--font-size-medium: 1.6rem;
+	--font-size-large: 1.8rem;
+	--font-size-x-large: 2.3rem;
+	--font-size-xx-large: 4.8rem;
+	--font-weight-regular: 400;
+	--font-weight-bold: 700;	
+	--line-height-small: 1.2;
+	--line-height-base: 1.5;
+	--line-height-big: 1.8;
+	--section-header-align: center;
+	--section-tagline-transform: uppercase;
+	--section-title-margin: 0;
+	--section-title-color: color-black;
+	--section-padding: 5rem 0;
+	--section-header-padding: 0 0 3rem;
+	--section-body-padding: 0 0 3rem;
+	--section-footer-padding: 3rem 0 0;
+	--section-footer-align: center;
+	--footer-padding: 5rem 0 1rem;  
+}
+
+/*               Just above the section-tagline declaration, create a new declaration targeting the section-title class      */
+.section-title{
+	font-family: var(--font-family-title);
+	font-size: var(--font-size-xx-large);
+	font-weight: var(--font-weight-bold);
+	margin: var(--section-title-margin);
+	text-color: var(--section-title-color);
+}
+
+/*          Targeting the section-tagline class with the following properties    */
+.section-tagline(
+	font-family: var(--font-family-title);
+	text-transform: var(--section-tagline-transform);
+	font-weight: var(--font-weight-bold);
+)
+
+/*    Target the container class and set the following       */
+.container{
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*        target the class section and set the padding on all 4 sides to section-padding     */
+.section{
+	padding: var(--section-padding);
+}
+
+/*      Set .section-header‘s pad all 4 sides with section-header-padding     */
+.section-header{
+	padding: var(--section-header-padding);
+}
+
+/*      target the section-body class, pad all 4 sides with section-body-padding     */
+.section-body{
+	padding: var(--section-body-padding);
+}
+
+/*          target the section-footer class, pad all 4 sides with section-footer-padding and set the horizontal alignment with section-footer-align       */
+.section-footer{
+	padding: var(--section-footer-padding);
+	text-align: var(--section-footer-align);
+}
+
+/*         target the class footer, pad all 4 sides of the selected element with footer-padding   */
+.footer{
+	padding: var(--footer-padding);
+}
+/*           horizontal alignment of the section-header class  with section-header-align    */
+.section-header{
+	text-align: var(--section-header-align);
+}
+
+/*          universal box-sizing rule    */
+*,
+*::before,
+*::after{
+	box-sizing: border-box;
+}
+/*    smooth scrolling                                  */
+html{
+	scroll-behavior:smooth;
+}
+
+/*       Set the minimum height of line boxes in the body to line-height-base       */
+body{
+	line-height: var(--line-height-base);
+}
+
+/*                Style the anchor elements so the text isn’t decorated with anything    */
+a[href]{
+	text-decoration: none;
+}
+/*      target the visited state for the link with italicised text    */
+a[href]:visited{
+	font-style: italic;
+}
+/*      target the hover state for the link decotating the links with an underline when hovering   */
+a[href]:hover{
+	text-decoration:  underline;
+}
+/*        target the active state for the link setting  the color of the background with the variable color-light-grey   */
+a[href]:active{
+	background-color: var(--color-light-grey);
+}
