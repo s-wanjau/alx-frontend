@@ -22,7 +22,7 @@
 	--section-header-align: center;
 	--section-tagline-transform: uppercase;
 	--section-title-margin: 0;
-	--section-title-color: color-black;  
+	--section-title-color: var(-- color-black);  
 }
 
 /*               Just above the section-tagline declaration, create a new declaration targeting the section-title class      */
